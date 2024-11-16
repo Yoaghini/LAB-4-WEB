@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Change paragraph Content</title>
+        <style>
+            body
+            {
+              background:Linear-gradient(135deg,#6a11cb,#2575fc);
+              font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+              display:flex;
+              justify-content: center;
+              align-items:center;
+              height : 100vh;
+              margin: 0;
+              color:white;
+            }
+
+            #myElement{
+                background-color: #4a90e2;
+                border-radius:10px;
+                padding:20px;
+                text-align:center;
+                box-shadow: #b4a3e1;
+                width: 300px;
+            }
+
+            button{
+                background-color: #007bff;
+                color:white;
+                border:none;
+                border-radius: 5px;
+                padding:10px 20px;
+                cursor:pointer;
+                font-size: 16px;
+                transition:backgrounf-color 0.3s;
+                margin-top:10px;
+            }
+
+            button:hover{
+                background-color: #0056b3;
+            }
+        </style>
+        <script>
+            function changeContent(){
+                var paragraph=document.querySelector('#myElement p');
+                paragraph.textContent="Hello there!";
+            }
+        </script>
+    </head>
+    <body>
+        <div id="myElement">
+            <p>Welcome to my website!</p>
+            <button onclick="changeContent()">Change Content</button>
+        </div>
+    </body>
+</html>
